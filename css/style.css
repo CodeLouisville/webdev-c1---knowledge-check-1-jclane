@@ -108,6 +108,26 @@ body {
 
 }
 
+.contact-container {
+    background: #304D6D;
+    padding: 1em 0 1em 0;
+}
+
+.contact-container .inline-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-container .inline-list .profile-link .logo {
+    height: 32px;
+    width: 32px;
+}
+
 .footer-container {
     background: #1b1b27;
     display: flex;
@@ -306,6 +326,12 @@ footer {
  MEDIA QUERIES
 =============================================================================
 */
+
+@media only screen and (max-width: 414px) {
+	.contact-container .inline-list .profile-link:nth-child(n+3)	{
+		display: none;
+	}
+}
 
 @media only screen and (min-width: 320px) {
 
