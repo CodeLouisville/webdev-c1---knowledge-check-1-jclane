@@ -121,10 +121,19 @@
         <div class="contact-content">
 
             <h2>Contact</h2>
-            <h3>Want to ask me a question or collaborate on a project?</h3>
+            <hr>
+            <span>Want to ask me a question or collaborate on a project?</span>
 
-            <form>
-
+            <form name="contact" class="contact-form" action="#" method="#">
+                <label for="name">Name</label>
+                <input class="form-input" id="name" name="name" required type="text" value>
+                <label for="email">Email</label>
+                <input class="form-input" id="email" name="email" required type="text" value>
+                <label for="subject">Subject</label>
+                <input class="form-input" id="subject" name="subject" require type="text" value>
+                <label for="message">Message</label>
+                <textarea class="form-input" id="message" name="message" required></textarea>
+                <input id="submit" name="submit" type="submit" value="Send">
             </form>
 
             <ul class="inline-list">

@@ -110,10 +110,62 @@ body {
 
 .contact-container {
     background: #304D6D;
+    color: #F1F1F1;
     padding: 1em 0 1em 0;
 }
 
-.contact-container .inline-list {
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+	display: grid;
+	color: black;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: repeat(3, 1fr) 100px;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	justify-items: center;
+	width: 50%;
+	max-width: 500px;
+	background-color: white;
+	opacity: 85%;
+	margin: 1em 0 2em 0;
+	padding: 15px;
+	box-shadow: 5px 5px 22px 5px black;
+	border-radius: 15px;
+}
+
+.contact-form h1 {
+	padding-bottom: 15px;
+}
+
+.contact-form .form-input {
+	width: 100%;
+	padding-left: 5px;
+	resize: none;
+}
+
+.contact-form #submit {
+	text-align: center;
+	grid-column: span 2;
+	padding: 10px 25px;
+	border: none;
+	border-radius: 15px;
+	background-color: rgba(150, 200, 255, .45);
+	box-shadow: inset 2px 2px 2px rgba(150, 200, 255, .75),
+	            inset -2px -2px 2px rgba(50, 50, 255, .5);
+}
+
+.contact-form #submit:active {
+	box-shadow: inset 2px 2px 2px rgba(50, 50, 255, .75),
+                inset -2px -2px 2px rgba(var(--tertiary), .5);
+}
+
+.inline-list {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -123,7 +175,7 @@ body {
     margin: 0;
 }
 
-.contact-container .inline-list .profile-link .logo {
+.inline-list .profile-link .logo {
     height: 32px;
     width: 32px;
 }
@@ -199,6 +251,7 @@ a:hover, a:active {
     color: #F1F1F1;
     border: 2px solid #333333;
 }
+
 .hero-content .btn:hover, .hero-content .btn:active {
     background: #74b44a;
     color: #F1F1F1;
@@ -227,8 +280,6 @@ a:hover, a:active {
     border: 2px solid #74b44a;
 }
 
-
-
 /* Typography
 ========================================================================== */
 
@@ -241,7 +292,6 @@ a:hover, a:active {
     margin: 0;
     text-transform: uppercase;
 }
-
 
 .hero-content h1 {
     font-family: 'Roboto Condensed', sans-serif;
@@ -257,6 +307,18 @@ a:hover, a:active {
     font-size: 18px;
     color: #F1F1F1;
     line-height: 1.5;
+}
+
+.contact-content h2 {
+    margin: 0;
+}
+
+.contact-content hr {
+    width: 75%;
+}
+
+.contact-form label, .contact-container span {
+    font-family: 'Cabin', sans-serif;
 }
 
 section h2 {
