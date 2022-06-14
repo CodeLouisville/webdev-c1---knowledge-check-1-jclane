@@ -4,13 +4,13 @@
   <head>
 
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Code Louisville Student Portfolio</title>
 
     <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
@@ -23,25 +23,25 @@
         <header class="header-content">
 
             <div class="main-logo">
-        
+
                 <span>CL Student Portfolio</span>
-        
+
             </div>
-        
+
             <nav class="main-nav">
-        
+
                 <ul id="navigation">
                     <li><a href="#aboutme">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-        
+
             </nav>
 
             <nav class="mobile-nav">
-        
+
                 <span><a href="#">☰</a></span>
-        
+
             </nav>
 
 
@@ -49,14 +49,14 @@
 
     </section>
 
-  
+
     <section class="hero-container" id="hero">
 
         <div class="hero-content">
 
             <h1>You're Going to Hire Me.</h1>
 
-            <p>Hello, my name is [INSERT NAME] I'm a student at Code Lousville. In about 24 weeks I will have the skills and knowledge to be hired as a Junior Web Developer.</p>
+            <p>Hello, my name is Justin and I'm a student at Code Lousville. In about 24 weeks I will have the skills and knowledge to be hired as a Junior Web Developer.</p>
 
             <a href="#aboutme" class="btn">Learn More About Me</a>
 
@@ -68,7 +68,7 @@
 
         <div class="aboutme-content">
 
-            <img src="http://placekitten.com/600" alt="Profile Photo" class="aboutme-photo">
+            <img src="./img/ork.jpg" alt="Profile Photo" class="aboutme-photo">
 
             <h2>About Me</h2>
 
@@ -113,20 +113,70 @@
             </article>
 
         </main>
-    
+
+    </section>
+
+    <section class="contact-container" id="contact">
+
+        <div class="contact-content">
+
+            <h2>Contact</h2>
+            <hr>
+            <span>Want to ask me a question or collaborate on a project?</span>
+
+            <form name="contact" class="contact-form" action="#" method="#">
+                <label for="name">Name</label>
+                <input class="form-input" id="name" name="name" required type="text" value>
+                <label for="email">Email</label>
+                <input class="form-input" id="email" name="email" required type="text" value>
+                <label for="subject">Subject</label>
+                <input class="form-input" id="subject" name="subject" require type="text" value>
+                <label for="message">Message</label>
+                <textarea class="form-input" id="message" name="message" required></textarea>
+                <input id="submit" name="submit" type="submit" value="Send">
+            </form>
+
+            <ul class="inline-list">
+
+                <li class="profile-link">
+                    <a href="https://www.linkedin.com/in/justinclaylane"><img class="logo" src="./img/logos/linkedin_logo.svg" alt="LinkedIn logo" /></a>
+                </li>
+
+                <li class="profile-link">
+                    <a href="https://github.com/jclane"><img class="logo" src="./img/logos/github_logo.svg" alt="GitHub logo" /></a>
+                </li>
+
+                <li class="profile-link">
+                    <a href="https://www.twitter.com/justin_lane"><img class="logo" src="./img/logos/twitter_logo.svg" alt="Twitter logo" /></a>
+                </li>
+
+                <li class="profile-link">
+                    <a href="https://mastodon.online/@jc"><img class="logo" src="./img/logos/mastodon_logo.svg" alt="Mastodon logo" /></a>
+                </li>
+
+                <li class="profile-link">
+                    <a href="https://www.facebook.com/justin.clay.lane"><img class="logo" src="./img/logos/facebook_logo.svg" alt="Facebook logo" /></a>
+                </li>
+
+                <li class="profile-link">
+                    <a href="https://www.instagram.com/j.c.lane/"><img class="logo" src="./img/logos/instagram_logo.svg" alt="Instagram logo" /></a>
+                </li>
+
+          </ul>
+
+        </div>
+
     </section>
 
     <section class="footer-container">
 
         <footer class="footer-content">
 
-            <p>&copy; 2022 Code Louisville. This website maintained by: [YOUR NAME HERE]</p> 
+            <p>&copy; 2022 Code Louisville. This website maintained by: Justin Lane</p>
 
         </footer>
 
     </section>
-
-
 
     <script src="js/app.js"></script>
 
